@@ -5,7 +5,8 @@ MAINTAINER  APSL <bcabezas@apsl.net>
 RUN \
     groupadd -g 501 wordpress ;\
     useradd -u 501 -g 501 -d /app -s /bin/bash wordpress  ;\
-    useradd -g wordpress www-data
+    groupadd www-data ;\
+    useradd -g www-data www-data
 
 # genkeys for wp key gen
 ADD genkeys.py /usr/local/bin/genkeys.py
