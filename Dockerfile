@@ -52,4 +52,8 @@ RUN mv composer.phar /usr/bin/composer
 ## MYSQL command
 RUN yum install mysql -y
 
+## Bugs ##
+RUN mkdir -p /data/conf/nginx/
+RUN mkdir -p /data/logs/
+
 EXPOSE 80 443
