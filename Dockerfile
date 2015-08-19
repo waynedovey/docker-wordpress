@@ -15,6 +15,7 @@ RUN \
 ## PHP + FPM
 RUN \
     yum install -y yum-utils && \
+    rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm && \
     rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-7.rpm && \
     yum-config-manager -q --enable remi && \
     yum-config-manager -q --enable remi-php56 && \
