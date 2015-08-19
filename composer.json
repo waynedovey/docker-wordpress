@@ -1,0 +1,36 @@
+{
+  "name": "schibsted-seals/wordpress-docker-template",
+  "version": "0.1.0",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "wordpress",
+        "type": "webroot",
+        "version": "4.2.2",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/WordPress/WordPress/archive/4.2.2.zip"
+        },
+        "require" : {
+          "fancyguy/webroot-installer": "1.0.0"
+        }
+      }
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0",
+    "wordpress": "4.2.2",
+    "fancyguy/webroot-installer": "1.0.0"
+  },
+  "extra": {
+    "webroot-dir": "wp",
+    "webroot-package": "wordpress"
+  },
+  "minimum-stability": "dev",
+  "license": "MIT"
+}

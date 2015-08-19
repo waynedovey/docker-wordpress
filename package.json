@@ -1,0 +1,35 @@
+{
+  "name": "wp-nginx-php-fpm",
+  "version": "1.0.0",
+  "description": "wp-nginx-php-fpm",
+  "main": "index.php",
+  "scripts": {
+    "test": "test-all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jacekelgda/wordpress-docker-centos-nginx-php-fmp.git"
+  },
+  "keywords": [
+    "docker"
+  ],
+  "author": "jacekelgda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacekelgda/wordpress-docker-centos-nginx-php-fmp/issues"
+  },
+  "homepage": "https://github.com/jacekelgda/wordpress-docker-centos-nginx-php-fmp",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-protractor-runner": "^1.2.1",
+    "grunt-sauce-connect-launcher": "^0.3.0",
+    "protractor": "^1.8.0",
+    "protractor-cucumber": "~0.1.4",
+    "cucumber": "~0.4.8",
+    "expect.js": "~0.3.1",
+    "chai": "~2.2.0",
+    "chai-as-promised": "~4.3.0",
+    "grunt-sass": "~0.18.1",
+    "load-grunt-tasks": "~3.1.0"
+  }
+}
