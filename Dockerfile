@@ -55,5 +55,6 @@ RUN yum install mysql -y
 ## Bugs ##
 RUN mkdir -p /data/conf/nginx/
 RUN mkdir -p /data/logs/
+RUN yum install inotify-tools -y
 
 EXPOSE 80 443
